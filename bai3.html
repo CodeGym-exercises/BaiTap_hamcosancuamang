@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 3</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let loop = true;
+		while(loop){
+			let input = prompt("Nhập chuỗi(exit để thoát)");
+			if(input=="exit")
+			{
+				loop =false;
+				break;
+			}else{
+				let result=[];
+				for(let i = 0 ;i<input.length;i++){
+					if(input[i]==input[i].toLowerCase()){
+						result.push(input[i].toUpperCase())
+					}else{
+						result.push(input[i].toLowerCase())
+					}
+				}
+				alert(result.join(""));	
+			}
+		}
+	</script>
+</body>
+</html>
